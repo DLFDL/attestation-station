@@ -1,0 +1,16 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+}
+
+.pagination ul, .pagination li {
+    list-style-type: none !important;
+}
+
+.pagination .selected {
+    display: none;
+}
+
+.pagination {
+    gap: 15px;
+}

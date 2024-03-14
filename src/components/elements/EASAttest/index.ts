@@ -1,0 +1,1 @@
+export { default as EASAttest } from './EASAttest';
