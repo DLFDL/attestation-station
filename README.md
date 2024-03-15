@@ -1,72 +1,72 @@
-Attestation Station dApp
+# Attestation Station dApp
 
-Introduction
+## Introduction 🌟
 
-Attestation Station is a decentralized application built on the Ethereum blockchain, enabling users to create, verify, and revoke attestations for digital documents securely. By leveraging blockchain technology, it ensures the authenticity and integrity of attested documents.
-Features
+Attestation Station is a decentralized application (dApp) built on the Ethereum blockchain, designed to enable users to create, verify, and revoke attestations for digital documents in a secure manner. Leveraging blockchain technology, it ensures the authenticity and integrity of attested documents are maintained.
 
-    Document Attestation: Users can attest to the authenticity of a document by generating and recording a unique hash of the document on the Ethereum blockchain.
-    Verification: Allows anyone with the document to verify its authenticity by comparing the document's hash stored on the blockchain.
-    Revocation: Document attestations can be revoked by the original attester, adding flexibility and control over the attested documents.
+## Features 🚀
 
-Getting Started
-Prerequisites
+- **Document Attestation**: Users can attest the authenticity of a document by generating and recording a unique hash of the document on the Ethereum blockchain.
+- **Verification**: Allows anyone in possession of the document to verify its authenticity by comparing the document's hash stored on the blockchain.
+- **Revocation**: Provides the ability for document attestations to be revoked by the original attester, adding a layer of flexibility and control over the attested documents.
 
-    Node.js (version 14.x or higher)
-    Metamask or any Web3 wallet for interacting with the Ethereum blockchain
-    Ethereum on the Sepolia Testnet (for testing purposes)
+## Getting Started 🏁
 
-Installation
+### Prerequisites
 
-    Clone the repository:
+- [Node.js](https://nodejs.org/en/) (version 14.x or higher recommended)
+- [Metamask](https://metamask.io/) or any Web3 wallet for interacting with the Ethereum blockchain.
+- Ethereum available on the Sepolia Testnet (for testing purposes).
 
-bash
+### Installation
 
-git clone https://github.com/DLFDL/attestation-station.git
-cd attestation-station-dapp
-
-    Install dependencies:
+1. Clone the repository:
 
 bash
+   git clone https://github.com/DLFDL/attestation-station.git
+   cd attestation-station
 
-npm install
-
-    Start the development server:
+2. Install dependencies:
 
 bash
+   npm install
 
-npm run dev
+3. Start the development server:
 
-Configuring Metamask
+bash
+    npm run dev
+
+### Configuring Metamask
 
     Ensure Metamask is installed in your browser and set up to connect to the Ethereum Sepolia Testnet.
-    Obtain Sepolia ETH from a faucet to perform transactions.
+    Obtain Sepolia ETH from a faucet to cover transaction costs.
 
-Usage
+## Usage 🔍
 
-Making an Attestation
+### Making an Attestation 
 
-    Connect your Web3 wallet.
-    Navigate to the "Make Attestation" section.
+    Connect your Web3 wallet to the dApp.
+    Navigate to the "Home" section within the dApp.
     Upload the document you wish to attest.
-    Confirm the transaction in your Web3 wallet.
+    Confirm the transaction in your Web3 wallet to complete the attestation.
 
-Verifying a Document
+### Verifying a Document
 
-    Go to the "Verify Document" section.
-    Upload or drag the document into the designated area.
-    The application will automatically verify the document's authenticity and display the result.
+    Access the "Attestation" section of the dApp.
 
-Contributing
+    Upload or drag the document into the designated area for verification.
+    The application will automatically verify the document's authenticity and display the verification result.
 
-Contributions are welcome!
+## Contributing
 
-License
+We welcome contributions from the community!
 
-Distributed under the MIT License. See LICENSE for more information.
+## License
 
-Contact
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-@DLFDL2020
+## Contact
 
-Project Link: https://github.com/DLFDL/attestation-station
+    @DLFDL
+    Project Link: https://github.com/DLFDL/attestation-station
+    Project Website: www.attestationstation.org
