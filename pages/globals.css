@@ -14,3 +14,7 @@
 .pagination {
     gap: 15px;
 }
+
+/* .pagination .disabled {
+    display: none !important;
+    } */
