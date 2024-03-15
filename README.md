@@ -21,44 +21,35 @@ Attestation Station is a decentralized application (dApp) built on the Ethereum 
 ### Installation
 
 1. Clone the repository:
-
-bash
-
    git clone https://github.com/DLFDL/attestation-station.git
    cd attestation-station
 
 2. Install dependencies:
-
-bash
-
    npm install
 
 3. Start the development server:
-
-bash
-
-    npm run dev
+   npm run dev
 
 ### Configuring Metamask
 
-Ensure Metamask is installed in your browser and set up to connect to the Ethereum Sepolia Testnet.
-Obtain Sepolia ETH from a faucet to cover transaction costs.
+- Ensure Metamask is installed in your browser and set up to connect to the Ethereum Sepolia Testnet.
+- Obtain Sepolia ETH from a faucet to cover transaction costs.
 
 ## Usage 🔍
 
 ### Making an Attestation 
 
-Connect your Web3 wallet to the dApp.
-Navigate to the "Home" section within the dApp.
-Upload the document you wish to attest.
-Confirm the transaction in your Web3 wallet to complete the attestation.
+- Connect your Web3 wallet to the dApp.
+- Navigate to the "Home" section within the dApp.
+- Upload the document you wish to attest.
+- Confirm the transaction in your Web3 wallet to complete the attestation.
 
 ### Verifying a Document
 
-Access the "Attestation" section of the dApp.
-
-Upload or drag the document into the designated area for verification.
-The application will automatically verify the document's authenticity and display the verification result.
+- Access the "Attestation" section of the dApp.
+- Select the specific attestation you wish to verify.
+- Upload or drag the document into the designated area for verification.
+- The application will automatically verify the document's authenticity and display the verification result.
 
 ## Contributing
 
@@ -70,6 +61,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-@DLFDL
-Project Link: https://github.com/DLFDL/attestation-station
-Project Website: www.attestationstation.org
+- @DLFDL
+- Project Link: https://github.com/DLFDL/attestation-station
+- Project Website: www.attestationstation.org
