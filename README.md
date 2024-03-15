@@ -20,15 +20,17 @@ Attestation Station is a decentralized application (dApp) built on the Ethereum 
 
 ### Installation
 
-1. Clone the repository:
-   git clone https://github.com/DLFDL/attestation-station.git
-   cd attestation-station
+Follow these steps to set up the project locally on your machine:
 
-2. Install dependencies:
-   npm install
+1. **Clone the repository:**
+   - git clone https://github.com/DLFDL/attestation-station.git
+   - cd attestation-station
 
-3. Start the development server:
-   npm run dev
+2. **Install dependencies:**
+   - npm install
+
+3. **Start the development server:**
+   - npm run dev
 
 ### Configuring Metamask
 
