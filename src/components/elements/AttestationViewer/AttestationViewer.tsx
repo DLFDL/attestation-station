@@ -102,12 +102,6 @@ const AttestationViewer = () => {
     },
   };
 
-  
-  
-
-
-    
-
   useEffect(() => {
     async function fetchData() {
       const schemaUID = '0x6a52486eac5d4a1d0bc8cfd1b512c67cc72c7a92cfe706fb3e298f197b8efc7b';
@@ -424,7 +418,7 @@ const AttestationViewer = () => {
                     nextLabel={<Button colorScheme="blue">Next</Button>}
                     className="pagination"
                     onPageChange={handlePageClick}
-                    pageRangeDisplayed={5}
+                    pageRangeDisplayed={6}
                     pageCount={pageCount}
                     previousLabel={<Button colorScheme="blue">Previous</Button>}
                     renderOnZeroPageCount={null}

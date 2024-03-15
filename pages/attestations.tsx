@@ -264,7 +264,7 @@ export default function Page() {
                           nextLabel={<Button colorScheme="blue">Next</Button>}
                           className="pagination"
                           onPageChange={handlePageClickSecondData}
-                          pageRangeDisplayed={10}
+                          pageRangeDisplayed={12}
                           pageCount={pageCount}
                           previousLabel={<Button colorScheme="blue">Previous</Button>}
                           renderOnZeroPageCount={null}

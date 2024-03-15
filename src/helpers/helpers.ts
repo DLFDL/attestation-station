@@ -6,13 +6,13 @@ export const sliceElements = (data: string) => {
 
   const firstElement = data.substring(0, 66);
   let currentIndex = 66;
-  const secondElement = '0x' + data.substring(currentIndex, currentIndex + 64);
+  const secondElement = `0x${data.substring(currentIndex, currentIndex + 64)}`;
   currentIndex += 64;
 
   const stringLengthHex = data.substring(currentIndex, currentIndex + 64);
   const stringLength = parseInt(stringLengthHex, 16);
   currentIndex += 64;
-  const thirdElement = '0x' + data.substring(currentIndex, currentIndex + stringLength * 2);
+  const thirdElement = `0x${data.substring(currentIndex, currentIndex + stringLength * 2)}`;
 
   return [firstElement, secondElement, thirdElement];
 };
@@ -37,7 +37,7 @@ export const bytes32ToString = (bytes32: string) => {
 
   let str = '';
   for (let i = 0; i < bytes32.length; i += 2) {
-    let charCode = parseInt(bytes32.substr(i, 2), 16);
+    const charCode = parseInt(bytes32.substr(i, 2), 16);
     if (charCode !== 0) {
       str += String.fromCharCode(charCode);
     }
@@ -62,15 +62,15 @@ export const decodeData = (value: string) => {
   return 'Not Provided';
 };
 
-const decodeDataLong = (value: string) => {
-  try {
-    console.log(22222)
-    return ethers.utils.parseBytes32String(value);
-  } catch (error) {
-    console.error('Error decoding data:', error);
-    return value;
-  }
-};
+// const decodeDataLong = (value: string) => {
+//   try {
+//     console.log(22222)
+//     return ethers.utils.parseBytes32String(value);
+//   } catch (error) {
+//     console.error('Error decoding data:', error);
+//     return value;
+//   }
+// };
 
 export const shortenString = (string: string) => {
   if (string.length > 130) {
