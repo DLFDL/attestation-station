@@ -14,7 +14,7 @@ Attestation Station is a decentralized application (dApp) built on the Ethereum 
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/en/) (version 14.x or higher recommended)
+- [Node.js](https://nodejs.org/en/) (version 18.x or higher recommended)
 - [Metamask](https://metamask.io/) or any Web3 wallet for interacting with the Ethereum blockchain.
 - Ethereum available on the Sepolia Testnet (for testing purposes).
 
