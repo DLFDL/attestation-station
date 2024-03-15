@@ -3,6 +3,7 @@ import { MoralisNextAuthProvider } from '@moralisweb3/next';
 
 export default NextAuth({
   providers: [MoralisNextAuthProvider()],
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user }) {
       if (user) {

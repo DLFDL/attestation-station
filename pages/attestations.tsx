@@ -30,7 +30,7 @@ export default function Page() {
   const [data, setData] = useState<any>(null);
   const [secondData, setSecondData] = useState<any>(null);
   const hoverTrColor = useColorModeValue('gray.100', 'gray.700');
-  const { address: attesterAddress } = useAccount();
+  const {address: attesterAddress} = useAccount();
   const router = useRouter();
   const [itemOffset, setItemOffset] = useState(0);
   const [secondItemOffset, setSecondItemOffset] = useState(0);

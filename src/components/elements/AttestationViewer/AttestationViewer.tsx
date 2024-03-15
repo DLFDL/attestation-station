@@ -44,7 +44,7 @@ const decodeData = (value: string) => {
 const AttestationViewer = () => {
   const hoverTrColor = useColorModeValue('gray.100', 'gray.700');
   const router = useRouter();
-  const { id } = router.query;
+  const {id} = router.query;
   const [attestation, setAttestation] = useState<any>();
   const [contentHash, setContentHash] = useState('');
   const [documentID, setDocumentID] = useState('');
@@ -55,7 +55,7 @@ const AttestationViewer = () => {
   const [revokeStatus, setRevokeStatus] = useState('');
   const [isFileAuthentic, setIsFileAuthentic] = useState(false);
   const [referencedAttestations, setReferencedAttestations] = useState<any>();
-  const { colorMode } = useColorMode();
+  const {colorMode} = useColorMode();
   const [txid, setTxid] = useState<any>();
   const isDark = colorMode === 'dark';
   const [itemOffset, setItemOffset] = useState(0);
