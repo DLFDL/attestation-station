@@ -34,7 +34,7 @@ export default function Page() {
   const router = useRouter();
   const [itemOffset, setItemOffset] = useState(0);
   const [secondItemOffset, setSecondItemOffset] = useState(0);
-  const itemsPerPage = 5;
+  const itemsPerPage = 12;
   const endOffset = itemOffset + itemsPerPage;
   const secondEndOffset = secondItemOffset + itemsPerPage;
 

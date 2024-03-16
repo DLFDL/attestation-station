@@ -59,7 +59,7 @@ const AttestationViewer = () => {
   const [txid, setTxid] = useState<any>();
   const isDark = colorMode === 'dark';
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 5;
+  const itemsPerPage = 6;
   const endOffset = itemOffset + itemsPerPage;
 
   const handlePageClick = (event: any) => {

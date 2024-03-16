@@ -15,6 +15,10 @@
     gap: 15px;
 }
 
-/* .pagination .disabled {
+.pagination .disabled {
+    display: none !important;
+    }
+
+/* .pagination .a {
     display: none !important;
     } */
