@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useAccount, useConnect, useDisconnect } from 'wagmi';
 import { Button } from '@chakra-ui/react';
+import { injected } from 'wagmi/connectors'
 import { getEllipsisTxt } from 'utils/format';
 
 export const Profile = () => {
   const { address } = useAccount();
-  const { connect, isPending, connectors } = useConnect();
+  const { connect, isPending } = useConnect();
   const { disconnect } = useDisconnect();
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -52,11 +53,9 @@ export const Profile = () => {
     <>
       {!address ? (
         <div className="d-flex justify-content-center align-items-center vh-100">
-          {connectors.map((connector) => (
-            <Button size="sm" colorScheme="blue" key={connector.uid} onClick={() => connect({ connector })}>
-              Connect Wallet
-            </Button>
-          ))}
+          <Button size="sm" colorScheme="blue" onClick={() => connect({ connector: injected() })}>
+          Connect Wallet
+          </Button>
         </div>
       ) : (
         <Button

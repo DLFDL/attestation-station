@@ -34,7 +34,7 @@ export default function Page() {
   const router = useRouter();
   const [itemOffset, setItemOffset] = useState(0);
   const [secondItemOffset, setSecondItemOffset] = useState(0);
-  const itemsPerPage = 12;
+  const itemsPerPage = 5;
   const endOffset = itemOffset + itemsPerPage;
   const secondEndOffset = secondItemOffset + itemsPerPage;
 
@@ -206,6 +206,9 @@ export default function Page() {
                           pageCount={pageCount}
                           previousLabel={<Button colorScheme="blue">Previous</Button>}
                           renderOnZeroPageCount={null}
+                          previousLinkClassName="previousLink"
+                          nextLinkClassName="nextLink"
+                          pageClassName="page-count"
                         />
                       </Flex>
                     </Box>
@@ -265,9 +268,14 @@ export default function Page() {
                           className="pagination"
                           onPageChange={handlePageClickSecondData}
                           pageRangeDisplayed={12}
-                          pageCount={pageCount}
+                          pageCount={0}
                           previousLabel={<Button colorScheme="blue">Previous</Button>}
                           renderOnZeroPageCount={null}
+                          previousClassName="previous"
+                          nextClassName="next"
+                          previousLinkClassName="previousLink"
+                          nextLinkClassName="nextLink"
+                          pageClassName="page-count"
                         />
                       </Flex>
                     </Box>

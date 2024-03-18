@@ -59,7 +59,7 @@ const AttestationViewer = () => {
   const [txid, setTxid] = useState<any>();
   const isDark = colorMode === 'dark';
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 6;
+  const itemsPerPage = 3;
   const endOffset = itemOffset + itemsPerPage;
 
   const handlePageClick = (event: any) => {
@@ -422,6 +422,7 @@ const AttestationViewer = () => {
                     pageCount={pageCount}
                     previousLabel={<Button colorScheme="blue">Previous</Button>}
                     renderOnZeroPageCount={null}
+                    pageClassName="page-count"
                   />
                 </Flex>
               </div>
