@@ -206,8 +206,6 @@ export default function Page() {
                           pageCount={pageCount}
                           previousLabel={<Button colorScheme="blue">Previous</Button>}
                           renderOnZeroPageCount={null}
-                          previousLinkClassName="previousLink"
-                          nextLinkClassName="nextLink"
                           pageClassName="page-count"
                         />
                       </Flex>
@@ -270,10 +268,6 @@ export default function Page() {
                           pageCount={0}
                           previousLabel={<Button colorScheme="blue">Previous</Button>}
                           renderOnZeroPageCount={null}
-                          previousClassName="previous"
-                          nextClassName="next"
-                          previousLinkClassName="previousLink"
-                          nextLinkClassName="nextLink"
                           pageClassName="page-count"
                         />
                       </Flex>

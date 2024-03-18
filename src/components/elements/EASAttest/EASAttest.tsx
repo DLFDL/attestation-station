@@ -8,7 +8,7 @@ import Dropzone from '../Dropzone/Dropzone';
 import { EAS, SchemaEncoder } from '@ethereum-attestation-service/eas-sdk';
 import { ButtonGroup, Button, Input, FormControl, FormLabel, Text, Textarea, Box, Flex } from '@chakra-ui/react';
 import { Profile } from '../Profile/Profile';
-import { injected } from 'wagmi/connectors'
+import { injected } from 'wagmi/connectors';
 import { getEllipsisTxt } from 'utils/format';
 import dynamic from 'next/dynamic';
 
@@ -318,19 +318,15 @@ const EASAttest: React.FC = () => {
               </div>
             ) : (
               <div>
-                
-                  <Button
-                    size="md"
-                    colorScheme="blue"
-                    margin="30px 15px"
-                    float="right"
-                    
-                    onClick={() => connect({ connector: injected() })}
-                  >
-                    Connect Wallet
-                  </Button>
-                
-
+                <Button
+                  size="md"
+                  colorScheme="blue"
+                  margin="30px 15px"
+                  float="right"
+                  onClick={() => connect({ connector: injected() })}
+                >
+                  {connectors.length > 0 ? 'Connect Wallet' : 'Wallet not installed'}
+                </Button>
               </div>
             )}
           </div>

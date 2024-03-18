@@ -6,7 +6,7 @@ import { getEllipsisTxt } from 'utils/format';
 
 export const Profile = () => {
   const { address } = useAccount();
-  const { connect, isPending } = useConnect();
+  const { connect, isPending, connectors } = useConnect();
   const { disconnect } = useDisconnect();
   const [domLoaded, setDomLoaded] = useState(false);
 
@@ -54,7 +54,7 @@ export const Profile = () => {
       {!address ? (
         <div className="d-flex justify-content-center align-items-center vh-100">
           <Button size="sm" colorScheme="blue" onClick={() => connect({ connector: injected() })}>
-          Connect Wallet
+            {connectors.length > 0 ? 'Connect Wallet' : 'Wallet not installed'}
           </Button>
         </div>
       ) : (
