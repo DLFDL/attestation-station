@@ -224,7 +224,6 @@ export default function Page() {
               {secondData && secondData.length > 0 ? (
                 (() => {
                   const currentItems2 = secondData.slice(secondItemOffset, secondEndOffset);
-                  const pageCount = Math.ceil(secondData.length / itemsPerPage);
                   return (
                     <Box border="2px" borderColor={hoverTrColor} borderRadius="xl" padding="24px 18px">
                       <TableContainer>
