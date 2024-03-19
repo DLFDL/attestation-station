@@ -34,7 +34,7 @@ export default function Page() {
   const router = useRouter();
   const [itemOffset, setItemOffset] = useState(0);
   const [secondItemOffset, setSecondItemOffset] = useState(0);
-  const itemsPerPage = 5;
+  const itemsPerPage = 12;
   const endOffset = itemOffset + itemsPerPage;
   const secondEndOffset = secondItemOffset + itemsPerPage;
 
@@ -222,6 +222,7 @@ export default function Page() {
               {secondData && secondData.length > 0 ? (
                 (() => {
                   const currentItems2 = secondData.slice(secondItemOffset, secondEndOffset);
+                  const pageCount = Math.ceil(secondData.length / itemsPerPage);
                   return (
                     <Box border="2px" borderColor={hoverTrColor} borderRadius="xl" padding="24px 18px">
                       <TableContainer>
@@ -265,7 +266,7 @@ export default function Page() {
                           className="pagination"
                           onPageChange={handlePageClickSecondData}
                           pageRangeDisplayed={12}
-                          pageCount={0}
+                          pageCount={pageCount}
                           previousLabel={<Button colorScheme="blue">Previous</Button>}
                           renderOnZeroPageCount={null}
                           pageClassName="page-count"
