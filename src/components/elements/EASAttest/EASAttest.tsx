@@ -231,7 +231,7 @@ const EASAttest: React.FC = () => {
               Type in the UID of an attestation you want to reference.
             </Text>
             <Input
-              placeholder="Example: 0x6b8dbc93d28f61af8acf737ce10b9bc2c93a9774f0587bbedbf9a8b6642c8687"
+              placeholder="Example: 0x2a858f443f65c476e47908267787a3ab98b3b865f410a35d34c45fa343444de5"
               value={refUID}
               onChange={(e) => handleUIDAddress(e.target.value)}
               style={{ marginBottom: '15px' }}

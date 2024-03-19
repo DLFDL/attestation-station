@@ -23,3 +23,7 @@
 .pagination .page-count {
   display: none;
 }
+
+.pagination .navigation {
+  display: none !important;
+}
