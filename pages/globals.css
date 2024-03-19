@@ -24,6 +24,6 @@
   display: none;
 }
 
-.pagination .navigation {
-  display: none !important;
+.pagination ul[role="navigation"] {
+  display: none;
 }
