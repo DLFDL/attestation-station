@@ -162,6 +162,23 @@ const FAQ = () => {
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
+              What is a Referenced Attestation?
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+          A Referenced Attestation is a Unique Identifier (UID) of an existing attestation. 
+          This feature lets you connect one attestation to another, creating a linked chain of attestations. 
+          By referencing a previous attestation’s UID when creating a new one, you establish a direct relationship between them, 
+          which can be helpful in tracking a sequence of related attestations or adding context to the current attestation. 
+          This linkage enhances the clarity and integrity of the attestation process.
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton>
+              <Box flex="1" textAlign="left">
               Can attestations be revoked?
               </Box>
               <AccordionIcon />
