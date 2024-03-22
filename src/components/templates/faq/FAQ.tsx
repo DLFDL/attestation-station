@@ -174,6 +174,21 @@ const FAQ = () => {
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex="1" textAlign="left">
+                What does it mean to make an attestation revocable?
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+            When you make an attestation revocable, you have the option to invalidate or cancel it at a later time. 
+            This flexibility allows you to retract the attestation if circumstances change, 
+            such as new information emerging that affects the accuracy or relevance of the attested information.
+            </AccordionPanel>
+          </AccordionItem>
+        <AccordionItem>
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">

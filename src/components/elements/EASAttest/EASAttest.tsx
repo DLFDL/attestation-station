@@ -151,7 +151,7 @@ const EASAttest: React.FC = () => {
               RECIPIENT (OPTIONAL)
             </FormLabel>
             <Text fontSize="sm" color="gray.600" marginBottom="1">
-              Ethereum address of the recipient.
+              Ethereum address of the recipient. The person you wish to inform about your attestation.
             </Text>
             <Input
               id="recipient"
@@ -228,7 +228,8 @@ const EASAttest: React.FC = () => {
           <FormControl mt={4}>
             <FormLabel fontWeight="bold">REFERENCED ATTESTATION (OPTIONAL)</FormLabel>
             <Text fontSize="sm" color="gray.600" marginBottom="1">
-              Type in the UID of an attestation you want to reference.
+            Please enter the UID of the attestation you wish to reference. 
+            This allows you to link the current attestation to another.
             </Text>
             <Input
               placeholder="Example: 0x2a858f443f65c476e47908267787a3ab98b3b865f410a35d34c45fa343444de5"
@@ -265,7 +266,7 @@ const EASAttest: React.FC = () => {
           <FormControl display="flex" flexDirection="column" alignItems="start" marginTop="4">
             <FormLabel fontWeight="bold">IS REVOCABLE</FormLabel>
             <Text fontSize="sm" color="gray.600" mb="1">
-              Allows the attestation to be revoked in the future.
+              Allows the attestation to be revoked in the future if you need to invalidate or cancel it.
             </Text>
             <ButtonGroup isAttached variant="outline" style={{ width: '100%' }}>
               <Button
